@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Password Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Trirong:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h3>Password Generator</h3>
+        
+        <input type="text" name="password" id="password" readonly>
+        
+        <div class="password-length">
+            <label for="number">
+                Select Password Length:
+            </label>
+                <input type="number" id="passwordLength" min="6" max="30">
+        </div>
+
+        <div class="checkboxes">
+            <div class="include-lowercase">
+                <label for="uppercase">
+                    Lowercase Letters:
+                </label>
+                <input type="checkbox" name="lowercase" id="lowercase">
+            </div>
+
+            <div class="include-uppercase">
+                <label for="uppercase">
+                    Uppercase Letters:
+                </label>
+                <input type="checkbox" name="uppercase" id="uppercase">
+            </div>
+
+            <div class="include-numbers">
+                <label for="numbers">
+                    Numbers:
+                </label>
+                <input type="checkbox" name="numbers" id="numbers">
+            </div>
+
+            <div class="include-symbols">
+                <label for="symbols">
+                    Symbols:
+                </label>
+                <input type="checkbox" name="symbols" id="symbols">
+            </div>
+
+            <div class="include-special">
+                <label for="specialChars">
+                    Special Characters:
+                </label>
+                <input type="checkbox" name="specialChars" id="specialChars">
+            </div>
+            <button id="generateBtn">GENERATE</button>
+        </div>
+    </div>
+</body>
+</html>
